@@ -7,34 +7,6 @@ const web3 = new Web3(provider);//instance of web3
 
 const { interface, bytecode } = require('../compile');
 
-//Example of mocha test suite
-
-// class Car {
-//   park() {
-//     return 'stopped';
-//   }
-//
-//   drive() {
-//     return 'vroom';
-//   }
-// }
-//
-// let car;
-//
-// beforeEach(() => {
-//   car = new Car();
-// });
-//
-// describe('Car', () => {
-//   it('can park', () => {
-//     assert.equal(car.park(), 'stopped');
-//   });
-//
-//   it('can drive', () => {
-//     assert.equal(car.drive(), 'vroom');
-//   })
-// });
-
 let accounts;
 let inbox;
 const INITIAL_STRING = 'Hello';
@@ -67,3 +39,31 @@ describe('Inbox', () => {
     assert.equal(message, SET_MESSAGE_STRING);
   });
 });
+
+//Example of mocha test suite
+
+// class Car {
+//   park() {
+//     return 'stopped';
+//   }
+//
+//   drive() {
+//     return 'vroom';
+//   }
+// }
+//
+// let car;
+//
+// beforeEach(() => {
+//   car = new Car();
+// });
+//
+// describe('Car', () => {
+//   it('can park', () => {
+//     assert.equal(car.park(), 'stopped');
+//   });
+//
+//   it('can drive', () => {
+//     assert.equal(car.drive(), 'vroom');
+//   })
+// });
